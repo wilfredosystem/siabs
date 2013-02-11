@@ -28,7 +28,7 @@ public class HibernateClienteDAO implements ClienteDAO {
 	@Override
 	public int getTotal() {
 		
-		return DataAccessUtils.intResult(hibernateTemplate.find("select count(*) from Cliente"));
+		return DataAccessUtils.intResult(hibernateTemplate.find("SELECT COUNT(*) FROM Cliente"));
 	}
 
 	@Autowired

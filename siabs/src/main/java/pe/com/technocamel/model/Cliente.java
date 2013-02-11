@@ -1,5 +1,6 @@
 package pe.com.technocamel.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,17 +9,22 @@ import javax.persistence.Table;
 import org.codehaus.jackson.annotate.JsonAutoDetect;
 
 
-@JsonAutoDetect//crea formato json
+@JsonAutoDetect
 @Entity
 @Table(name="tbl_cliente")
 public class Cliente {
 
 	@Id
 	@GeneratedValue
+	@Column(name="id")
 	private int id;
+	@Column(name="nombre")
 	private String nombre;
+	@Column(name="paterno")
 	private String paterno;
+	@Column(name="materno")
 	private String materno;
+	@Column(name="celular")
 	private String celular;
 	
 	

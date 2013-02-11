@@ -15,7 +15,6 @@
 
 Ext.define('SIABS.controller.Cliente', {
     extend: 'Ext.app.Controller',
-    alias: 'controller.ctrCliente',
 
     models: [
         'Cliente'
